@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "dotenv": "^16.4.7",
+    "lucide-vue-next": "^0.473.0",
     "nodemon": "^3.1.9",
     "pinia": "^2.3.0",
     "sass": "^1.83.4",
