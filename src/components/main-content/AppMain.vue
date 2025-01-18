@@ -1,6 +1,15 @@
 <script>
+import MessageList from './chat/MessageList.vue';
+import ContactInfo from './ContactInfo.vue';
+import TextInput from './TextInput.vue';
+
 export default {
     name: 'Main',
+    components: {
+        ContactInfo,
+        MessageList,
+        TextInput
+    },
     data() {
         return {
 
@@ -11,9 +20,9 @@ export default {
 
 <template>
     <main class="main-content">
-        <div class="chat">
-
-        </div>
+        <ContactInfo />
+        <MessageList />
+        <TextInput />
     </main>
 </template>
 
