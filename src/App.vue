@@ -1,12 +1,12 @@
 <script>
 
-import AppContacts from './components/AppContacts.vue';
-import AppChat from './components/AppChat.vue';
+import AppSidebar from './components/sidebar/AppSidebar.vue';
+import AppMain from './components/main-content/AppMain.vue';
 
 export default {
   components: {
-    AppContacts,
-    AppChat
+    AppSidebar,
+    AppMain
   },
   data() {
     return {
@@ -17,9 +17,14 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <AppContacts />
-    <AppChat />
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
+
+        <AppSidebar />
+        <AppMain />
+      </div>
+    </div>
   </div>
 </template>
 
