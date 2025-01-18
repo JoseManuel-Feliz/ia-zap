@@ -1,13 +1,16 @@
 <script>
-import { MessageSquarePlus, EllipsisVertical, CircleDashed, Search } from 'lucide-vue-next';
-
+import NavIcons from './NavIcons.vue';
+import SearchBar from './contacts/SearchBar.vue';
+import NotificationBanner from './contacts/NotificationBanner.vue';
+import { MessageSquarePlus, EllipsisVertical } from 'lucide-vue-next';
 export default {
     name: 'Sidebar',
     components: {
+        NavIcons,
         MessageSquarePlus,
         EllipsisVertical,
-        CircleDashed,
-        Search
+        NotificationBanner,
+        SearchBar
     },
     data() {
         return {
@@ -19,41 +22,21 @@ export default {
 
 <template>
     <aside class="sidebar">
-        <header class="user-info">
-            <div class="right-content">
-                <div class="user-name"></div>
-                <div class="user-img"></div>
-            </div>
-            <div class="left-content">
+        <NavIcons />
 
-                <div class="icons">
-                    <CircleDashed />
-                </div>
+        <section>
 
-                <div class="icons">
+            <header class="user-info">
+                <h2> Chat</h2>
+                <div>
                     <MessageSquarePlus />
-                </div>
-
-                <div class="icons">
                     <EllipsisVertical />
                 </div>
-            </div>
-        </header>
-        <div class="">
-            <div class="notifications">
+                <SearchBar />
+                <NotificationBanner />
+            </header>
 
-            </div>
-            <div class="search-wrapper">
-                <div class="magnifier-ico">
-                    <Search />
-                </div>
-                <input type="text" />
-            </div>
-        </div>
-        <div class="contacts">
-            <div class="contact-info">
-            </div>
-        </div>
+        </section>
     </aside>
 </template>
 
