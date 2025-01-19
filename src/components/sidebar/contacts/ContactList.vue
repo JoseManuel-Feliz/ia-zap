@@ -20,4 +20,10 @@ export default {
   </ul>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+@use "@styles/partials/_mixins.scss" as *;
+
+ul {
+  @include reset-list;
+}
+</style>

@@ -4,7 +4,7 @@ import { ChevronDown } from 'lucide-vue-next';
 export default {
     name: 'MessageOption',
     components: {
-
+        ChevronDown
     },
     data() {
         return {

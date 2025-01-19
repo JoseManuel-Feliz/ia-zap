@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class="center">
         <Search />
         <input type="text" />
     </div>

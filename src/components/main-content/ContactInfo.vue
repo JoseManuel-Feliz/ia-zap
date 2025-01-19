@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-    <Header>
+    <header>
         <div>
             <div>
                 avatar
@@ -35,7 +35,7 @@ export default {
                 <EllipsisVertical />
             </li>
         </ul>
-    </Header>
+    </header>
 </template>
 
 <style scoped></style>

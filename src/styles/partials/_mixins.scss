@@ -1,0 +1,31 @@
+// List reset
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+// Vertical column
+@mixin flex-col-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Flex shorthand: grow, shrink, basis
+@mixin flex-gsb($grow, $shrink, $basis) {
+    flex: $grow $shrink $basis;
+}
+
+@mixin row($justify-content, $align-items, $gap) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap;
+}
+
+@mixin container($width) {
+    width: $width;
+    margin: 0 auto;
+}

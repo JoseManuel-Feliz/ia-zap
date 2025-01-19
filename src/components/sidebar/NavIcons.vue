@@ -52,4 +52,28 @@ export default {
     </nav>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+@use '@styles/partials/_mixins.scss' as *;
+
+nav {
+    background-color: #F0F2F5;
+    @include flex-col-between;
+    @include flex-gsb(0, 1, 20%);
+    margin: 10px 0;
+
+    ul {
+        @include reset-list;
+        text-align: center;
+
+        li {
+            margin: 10px 0;
+        }
+    }
+}
+
+.avatar {
+    padding: 15px;
+    border-radius: 20px;
+    border: dashed black 1px;
+}
+</style>

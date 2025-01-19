@@ -29,5 +29,14 @@ export default {
 </template>
 
 <style lang="scss">
-@use "./styles/general.scss"
+@use "@styles/general.scss" as *;
+@use "@styles/partials/_mixins.scss" as *;
+
+.container {
+  @include container(1300px);
+
+  .row {
+    @include row(center, center, 0)
+  }
+}
 </style>

@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class="space-between">
         <BellOff />
         <div>
             <span></span>
