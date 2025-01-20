@@ -49,7 +49,6 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use "@styles/general.scss" as *;
 @use "@styles/partials/_mixins.scss" as *;
 
 .sidebar {
