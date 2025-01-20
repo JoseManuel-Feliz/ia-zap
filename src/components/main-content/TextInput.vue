@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-    <footer>
+    <footer class="d-flex">
         <div>
             <SmilePlus />
         </div>
@@ -29,4 +29,15 @@ export default {
     </footer>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+footer {
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+    align-items: center;
+    padding: 0 20px;
+}
+</style>

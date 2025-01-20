@@ -19,13 +19,43 @@ export default {
 </script>
 
 <template>
-    <div>
-        <div>
+    <div class="message-list">
+
+        <div class="received d-flex">
             <MessageListItem />
-            <MessageOptions />
+            <!-- <MessageOptions /> -->
         </div>
-        <MessageReaction />
+        <!-- <MessageReaction /> -->
+        <div class="sent d-flex">
+            <MessageListItem />
+            <!-- <MessageOptions /> -->
+        </div>
+        <!-- <MessageReaction /> -->
     </div>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+.message-list {
+    background: url("@assets/light-backgroung.png");
+    height: calc(100% - 140px);
+    overflow-y: auto;
+
+    .received,
+    .sent {
+
+        border: dashed black 1px;
+        margin: 10px 0;
+        align-items: center;
+        max-width: 60%;
+    }
+
+    .sent {
+        margin-left: auto;
+        justify-content: flex-end;
+    }
+
+    .recived {
+        justify-content: flex-start;
+    }
+}
+</style>

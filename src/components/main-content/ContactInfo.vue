@@ -17,14 +17,14 @@ export default {
 </script>
 
 <template>
-    <header>
-        <div>
-            <div>
-                avatar
+    <header class="d-flex">
+        <div class="d-flex">
+            <div class="avatar">
+
             </div>
-            <div>Contact-name</div>
+            <div class="name">Contact-name</div>
         </div>
-        <ul>
+        <ul class="d-flex">
             <li>
                 <Video />
             </li>
@@ -38,4 +38,32 @@ export default {
     </header>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+@use "@styles/partials/_mixins.scss" as *;
+
+header {
+    min-height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    border: dashed black 1px;
+
+    div {
+        align-items: center;
+        gap: 15px;
+
+        .avatar {
+            padding: 20px;
+            border-radius: 20px;
+            border: dashed black 1px;
+        }
+
+
+    }
+
+    ul {
+        @include reset-list;
+        gap: 10px;
+    }
+}
+</style>

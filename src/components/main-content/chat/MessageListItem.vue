@@ -10,10 +10,27 @@ export default {
 </script>
 
 <template>
-    <div>
-        <p>text</p>
+    <div class="d-flex">
+        <p>Text</p>
         <span>time</span>
     </div>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+div {
+    border: dashed black 1px;
+    min-height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex: 0 1 auto;
+
+    p {
+        word-break: break-word;
+    }
+
+    span {
+        align-self: flex-end;
+    }
+}
+</style>
