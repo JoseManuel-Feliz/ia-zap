@@ -31,6 +31,7 @@ export default {
 
 <style scoped lang="scss">
 footer {
+    background-color: #F0F2F5;
     justify-content: space-between;
     position: absolute;
     left: 0;

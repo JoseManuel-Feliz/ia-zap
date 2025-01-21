@@ -42,6 +42,7 @@ export default {
 @use "@styles/partials/_mixins.scss" as *;
 
 header {
+    background-color: #F0F2F5;
     min-height: 80px;
     justify-content: space-between;
     align-items: center;
