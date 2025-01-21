@@ -1,9 +1,11 @@
+@import "@fontsource/open-sans";
 @import "./partials/_variables.scss";
 // Reset
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", "Ubuntu", "Cantarell", "Fira Sans", "sans-serif";
 }
 
 // Generics
