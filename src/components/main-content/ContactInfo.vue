@@ -47,7 +47,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
-    border: dashed black 1px;
 
     div {
         align-items: center;

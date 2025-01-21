@@ -18,6 +18,7 @@ export default {
 
 <style scoped lang="scss">
 div {
+    filter: drop-shadow(0px 1px 2px #A4A4A4);
     border-radius: 10px;
     min-height: 35px;
     justify-content: space-between;
