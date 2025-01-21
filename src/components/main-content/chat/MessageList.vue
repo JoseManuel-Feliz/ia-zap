@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-    <div class="message-list">
+    <div class="message-list bg-pattern">
 
         <div class="received d-flex">
             <MessageListItem />
@@ -36,7 +36,7 @@ export default {
 
 <style scoped lang="scss">
 .message-list {
-    background: url("@assets/light-backgroung.png");
+
     height: calc(100% - 140px);
     overflow-y: auto;
 

@@ -1,3 +1,4 @@
+@import "./partials/_variables.scss";
 // Reset
 * {
     margin: 0;
@@ -5,10 +6,11 @@
     box-sizing: border-box;
 }
 
+// Generics
 body {
     background: linear-gradient(to top, rgba(16, 149, 136, 0.25), #dddbd2 50%, #dddbd2 85%, #109587 75%);
 }
-
+// Utils
 .wrapper {
     height: 100vh;
     display: flex;
@@ -18,4 +20,10 @@ body {
 
 .d-flex {
     display: flex;
+}
+
+.bg-pattern {
+    background:
+        $pattern /* fixed no-repeat -20% center / contain */,
+        #efeae2;
 }
