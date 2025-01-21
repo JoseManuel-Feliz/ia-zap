@@ -36,14 +36,14 @@ export default {
 
 <style scoped lang="scss">
 .message-list {
-
+    padding: 20px 0;
     height: calc(100% - 140px);
     overflow-y: auto;
 
     .received,
     .sent {
 
-        border: dashed black 1px;
+
         margin: 10px 0;
         align-items: center;
         max-width: 60%;
@@ -55,6 +55,7 @@ export default {
 
         &>div {
             background-color: #D9FDD3;
+            margin-right: 20px;
         }
     }
 
@@ -63,6 +64,7 @@ export default {
 
         &>div {
             background-color: #FFFFFF;
+            margin-left: 20px;
         }
     }
 }

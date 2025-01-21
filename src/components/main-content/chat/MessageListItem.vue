@@ -18,14 +18,16 @@ export default {
 
 <style scoped lang="scss">
 div {
-    border: dashed black 1px;
-    min-height: 40px;
+    border-radius: 10px;
+    min-height: 35px;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
     flex: 0 1 auto;
+    padding: 0 15px;
 
     p {
+        padding: 10px 0;
         word-break: break-word;
     }
 
