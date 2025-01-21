@@ -52,10 +52,18 @@ export default {
     .sent {
         margin-left: auto;
         justify-content: flex-end;
+
+        &>div {
+            background-color: #D9FDD3;
+        }
     }
 
-    .recived {
+    .received {
         justify-content: flex-start;
+
+        &>div {
+            background-color: #FFFFFF;
+        }
     }
 }
 </style>
