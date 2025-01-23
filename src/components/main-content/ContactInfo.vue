@@ -17,14 +17,14 @@ export default {
 </script>
 
 <template>
-    <header class="d-flex">
-        <div class="d-flex">
+    <header class="d-flex justify-space-between align-center">
+        <div class="d-flex align-center gap-15">
             <div class="avatar">
 
             </div>
             <div class="name">Contact-name</div>
         </div>
-        <ul class="d-flex">
+        <ul class="d-flex gap-10">
             <li>
                 <Video />
             </li>
@@ -44,26 +44,19 @@ export default {
 header {
     background-color: #F0F2F5;
     min-height: 80px;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 15px;
 
     div {
-        align-items: center;
-        gap: 15px;
-
         .avatar {
             padding: 20px;
             border-radius: 20px;
             border: dashed black 1px;
         }
-
-
     }
 
     ul {
         @include reset-list;
-        gap: 10px;
+
     }
 }
 </style>

@@ -30,7 +30,7 @@ export default {
 
             <header class="user-info">
 
-                <div class="space-between">
+                <div class="d-flex justify-space-between align-center p-10">
                     <h2> Chat</h2>
                     <div>
                         <MessageSquarePlus />
@@ -62,25 +62,13 @@ export default {
         border-left: #D1D7DB solid 1px;
 
         header {
-            .center {
-                justify-content: center;
-            }
+            max-height: 150px;
 
-            .space-between {
-                justify-content: space-between;
-            }
-
-            &>div {
-                display: flex;
-                align-items: center;
-                border: dashed black 1px;
-                padding: 10px;
-            }
         }
 
         .contacts {
             overflow-y: auto;
-            max-height: calc(100% - 182px);
+            max-height: calc(100% - 150px);
         }
     }
 }

@@ -29,21 +29,31 @@ export default {
     <nav>
         <ul>
             <li>
-                <MessageSquareText />
+                <div>
+                    <MessageSquareText />
+                </div>
             </li>
             <li>
-                <CircleDashed />
+                <div>
+                    <CircleDashed />
+                </div>
             </li>
             <li>
-                <MessageCircleCode />
+                <div>
+                    <MessageCircleCode />
+                </div>
             </li>
             <li>
-                <UsersRound />
+                <div>
+                    <UsersRound />
+                </div>
             </li>
         </ul>
         <ul>
             <li>
-                <Settings />
+                <div>
+                    <Settings />
+                </div>
             </li>
             <li class="avatar">
 
@@ -63,10 +73,25 @@ nav {
 
     ul {
         @include reset-list;
-        text-align: center;
+
 
         li {
+
             margin: 10px 0;
+            padding: 5px;
+
+            &>div:hover {
+                background: grey;
+                color: lightgray;
+            }
+
+            &>div {
+                padding: 5px;
+                border-radius: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
 }

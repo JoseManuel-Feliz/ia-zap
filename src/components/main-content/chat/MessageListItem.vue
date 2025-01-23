@@ -1,16 +1,20 @@
 <script>
+import { useChatStore } from '@/stores/chatStore';
 export default {
     name: 'MessageListItem',
     data() {
         return {
-
+            contacts: [],
         }
-    }
+    }, mounted() {
+        const chatStore = useChatStore();
+        this.contacts = chatStore.contacts;
+    },
 }
 </script>
 
 <template>
-    <div class="d-flex">
+    <div class="d-flex justify-space-between align-center gap-10">
         <p>Text</p>
         <span>time</span>
     </div>
@@ -21,9 +25,6 @@ div {
     filter: drop-shadow(0px 1px 2px #A4A4A4);
     border-radius: 10px;
     min-height: 35px;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
     flex: 0 1 auto;
     padding: 0 15px;
 

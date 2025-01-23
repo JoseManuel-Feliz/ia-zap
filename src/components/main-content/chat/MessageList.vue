@@ -26,7 +26,7 @@ export default {
             <!-- <MessageOptions /> -->
         </div>
         <!-- <MessageReaction /> -->
-        <div class="sent d-flex">
+        <div class="sent d-flex align-center">
             <MessageListItem />
             <!-- <MessageOptions /> -->
         </div>
@@ -42,10 +42,7 @@ export default {
 
     .received,
     .sent {
-
-
         margin: 10px 0;
-        align-items: center;
         max-width: 60%;
     }
 

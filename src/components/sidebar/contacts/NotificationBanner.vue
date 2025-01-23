@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-    <div class="space-between">
+    <div class="d-flex justify-space-between align-center notification p-20">
         <BellOff />
         <div>
             <span></span>
@@ -27,4 +27,8 @@ export default {
     </div>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+.notification {
+    height: 50px;
+}
+</style>

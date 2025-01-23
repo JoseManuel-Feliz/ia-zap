@@ -15,10 +15,14 @@ export default {
 </script>
 
 <template>
-    <div class="center">
+    <div class="d-flex justify-center align-center">
         <Search />
         <input type="text" />
     </div>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+div {
+    height: 40px;
+}
+</style>

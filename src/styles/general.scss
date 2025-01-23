@@ -1,6 +1,7 @@
 @import "@fontsource/open-sans";
 @import "./partials/_variables.scss";
-// Reset
+
+// | Reset
 * {
     margin: 0;
     padding: 0;
@@ -8,24 +9,76 @@
     font-family: "Open Sans", "Ubuntu", "Cantarell", "Fira Sans", "sans-serif";
 }
 
-// Generics
-body {
-    background: linear-gradient(to top, rgba(16, 149, 136, 0.25), #dddbd2 50%, #dddbd2 85%, #109587 75%);
-}
-// Utils
-.wrapper {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// | Utils
+.container {
+    width: 1300px;
+    margin: 0 auto;
 }
 
 .d-flex {
     display: flex;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+// | Spacing
+
+// Gap
+.gap-10 {
+    gap: 10px;
+}
+.gap-15 {
+    gap: 15px;
+}
+
+// Margin
+.ms-auto {
+    margin-left: auto;
+}
+.ms-20 {
+    margin-left: 20px;
+}
+.me-10 {
+    margin-right: 10px;
+}
+.me-20px {
+    margin-right: 20px;
+}
+
+// Padding
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+// | Generics
+body {
+    background: linear-gradient(to top, rgba(16, 149, 136, 0.25), #dddbd2 50%, #dddbd2 85%, #109587 75%);
+}
+
+// TODO refactoring
 .bg-pattern {
     background:
         $pattern /* fixed no-repeat -20% center / contain */,
         #efeae2;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -31,7 +31,6 @@ main {
     height: 800px;
     background: #fff;
     width: 70%;
-    border-left: 1px dashed;
     position: relative;
 }
 </style>

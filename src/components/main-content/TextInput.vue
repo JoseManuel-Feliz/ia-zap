@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-    <footer class="d-flex">
+    <footer class="d-flex align-center justify-space-between">
         <div>
             <SmilePlus />
         </div>
@@ -32,13 +32,11 @@ export default {
 <style scoped lang="scss">
 footer {
     background-color: #F0F2F5;
-    justify-content: space-between;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     height: 60px;
-    align-items: center;
     padding: 0 20px;
 }
 </style>
